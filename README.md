@@ -1,7 +1,7 @@
 # gryd-matching
 Python code for matching GRYD and LAPD events by date and location.
 
-Gecoords queries the Google API to geocode addresses into GPS coordinates.
+Geocodes queries the Google API to geocode addresses into GPS coordinates.
 
 Initialmatch pairs events by proximity in date and location.
 

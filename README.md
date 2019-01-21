@@ -1,8 +1,8 @@
 # gryd-matching
-Python code for matching GRYD and LAPD events by date and location.
+Python code for matching events in the GRYD study and LAPD data sets by date and location.
 
-Geocodes queries the Google API to geocode addresses into GPS coordinates.
+The getcoords script queries the Google API to geocode addresses into GPS coordinates.
 
-Initialmatch pairs events by proximity in date and location.
+The initial-match script pairs events by proximity in date and location.
 
-We mark these initial matches as valid if there was exactly one LAPD event that happened on the same day and within 500 meters of the corresponding the GRYD event. Other matches are marked for further comparison.
+I considered these initial matches as valid if there was exactly one LAPD event that happened on the same day and within 500 meters of the corresponding the GRYD event. Other matches are marked for further comparison. To validate this assumption, I randomly sampled 10% of these initial matches and rechecked them manualy. 
